@@ -1,13 +1,22 @@
-# health position
-import random
+january_to_june_rainfall = 1.93 + 0.71 + 3.53 + 3.41 + 3.69 + 4.50
+annual_rainfall = january_to_june_rainfall
 
-health = 50
+july_rainfall = 1.05
+annual_rainfall += july_rainfall
 
-difficulty = 3
+august_rainfall = 4.91
+annual_rainfall += august_rainfall
 
+september_rainfall = 5.16
+september_rainfall += annual_rainfall
 
-potion_health = int(random.randint(25,50)/difficulty)
+october_rainfall = 7.20
+october_rainfall += annual_rainfall
 
-health = health + potion_health
+november_rainfall = 5.06
+november_rainfall += annual_rainfall
 
-print(health)
+december_rainfall = 4.06
+december_rainfall += annual_rainfall
+
+print annual_rainfall
